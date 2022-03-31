@@ -28,7 +28,7 @@ const FadeInView = (props) => {
     </Animated.View>
   );
 }
-
+//SourceSansPro_400Regular || SourceSansPro_700Bold
 // You can then use your `FadeInView` in place of a `View` in your components:
 export default () => {
   return (
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         margin: 2,
         color: '#eea904',
-        fontWeight: 'bold',
+        fontFamily: 'SourceSansPro_700Bold'
     },
     logo: {
         justifyContent: 'center',
