@@ -9,8 +9,8 @@ import {
   Button,
   KeyboardAvoidingView,
 } from 'react-native'
-import KingYellow from '../components/atoms/Text/KingYellow'
-import { CustomText, Logo } from '../components/atoms'
+import KingYellow from '../../components/atoms/Text/KingYellow'
+import { CustomText, Logo } from '../../components/atoms'
 
 export default function SplashScreen() {
   return (

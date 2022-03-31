@@ -9,8 +9,8 @@ import styled from 'styled-components'
 
 
 export const CustomText = styled.Image`    
-    font-size: 34px;
-    color: ${({ color }) => color || 'white'};
+    font-size: ${({ theme}) => theme.metrics.rx(24)}px;
+    color: ${({ color, theme }) => color || theme.colors.light};
     font-weight: bold;
     justifyContent: center;
     alignItems: center;
