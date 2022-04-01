@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import react from 'react';
-import SplashScreen from './src/screens/SplashScreen/login'
+// import SplashScreen from './src/screens/SplashScreen/login'
+// import { Home } from './src/screens/Home/index'
+import { SplashScreen} from './src/screens'
 import AppLoading from 'expo-app-loading';
-import { CustomText } from './src/components/atoms/CustomText';
 import { ThemeProvider} from 'styled-components'
 import { 
     useFonts, 

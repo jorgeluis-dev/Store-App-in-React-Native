@@ -10,11 +10,11 @@ import {
   KeyboardAvoidingView,
 } from 'react-native'
 import KingYellow from '../../components/atoms/Text/KingYellow'
-import { CustomText, Logo } from '../../components/atoms'
+import { Container, CustomText, Logo } from '../../components/atoms'
 
 export default function SplashScreen() {
   return (
-    <View style={styles.container}>
+    <Container align="center" justify="center">
       <KingYellow />
 
       <TextInput style={styles.input2} />
@@ -32,7 +32,7 @@ export default function SplashScreen() {
 
       <Text style={styles.textSimples}>esqueceu sua Senha?</Text>
       <StatusBar style="auto" />
-    </View>
+    </Container>
   )
 }
 
