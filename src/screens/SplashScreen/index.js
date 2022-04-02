@@ -12,11 +12,15 @@ import {
 import KingYellow from '../../components/atoms/Text/KingYellow'
 import { Container, CustomText, Logo } from '../../components/atoms'
 
-export default function SplashScreen() {
+export const SplashScreen = ({ navigation }) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate('Home')
+    }, 4000)
+  }, [navigation])
   return (
     <Container align="center" justify="center">
       <KingYellow />
-
       <TextInput style={styles.input2} />
       <TextInput style={styles.input} placeholder="Qual o seu email?" />
       <TextInput style={styles.input} placeholder="Escreva sua Senha" />
@@ -30,11 +34,14 @@ export default function SplashScreen() {
         />
       </View>
 
-      <Text style={styles.textSimples}>esqueceu sua Senha?</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.textSimples}>esqueceu sua senha?</Text>
+
     </Container>
   )
-}
+}         
+
+
+
 
 const styles = StyleSheet.create({
   container: {

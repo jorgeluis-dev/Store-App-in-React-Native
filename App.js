@@ -1,5 +1,5 @@
 import 'react-native-gesture-handler'
-
+import styled from 'styled-components/native'
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import React from 'react';
@@ -7,6 +7,7 @@ import Home from './src/screens/Home/index';
 import AppLoading from 'expo-app-loading';
 import { CustomText } from './src/components/atoms/CustomText';
 import { ThemeProvider} from 'styled-components'
+
 import { 
     useFonts, 
     SourceSansPro_400Regular,
@@ -16,7 +17,7 @@ import {
    } from '@expo-google-fonts/source-sans-pro';
 import { theme } from './src/styles'
 import SplashScreen from './src/screens/SplashScreen';
-import { Routes } from './src/routes/index';
+import { Routes } from './src/routes';
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -31,7 +32,7 @@ export default function App() {
   }
     return (
         <ThemeProvider theme={theme}>
-            <SplashScreen />
+            <Routes />
         </ThemeProvider>
          
     )

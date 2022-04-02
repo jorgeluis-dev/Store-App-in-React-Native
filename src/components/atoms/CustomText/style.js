@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components/native'
 
 // export const CustomText = styled.p`
 //     font-size: 34px;

@@ -1,3 +1,5 @@
+import styled from 'styled-components/native'
+
 export const colors = {
     white: '#fff',
     light: '#e5e5e5',
