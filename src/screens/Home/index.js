@@ -1,5 +1,5 @@
-import { Container} from '../../components/atoms/Container';
-import { HomeList } from '../../components/organisms/HomeList';
+import { HomeList, Hero } from '../../components/organisms';
+import { Container } from '../../components/atoms';
 import { StatusBar } from 'expo-status-bar'
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import { Text, StyleSheet } from 'react-native';
@@ -7,11 +7,8 @@ import React from 'react'
 
 export const Home = () => {
     return (
-        <Container align="center" justify="center">
-            <StatusBar style="auto" />
-            <TouchableOpacity onPress={() => alert('TESTE')}>
-                <Text style={styles.text}>Home</Text>
-            </TouchableOpacity>
+        <Container align="flex-start" justify="flex-start">
+            <Hero />
             <HomeList style={{ width: 5, height: 5}}  align="center" justify="center"/>
             
         </Container>

@@ -9,7 +9,7 @@ export const Routes = () => {
     const Stack = createStackNavigator()
     return (
         <NavigationContainer>
-            <Stack.Navigator headerMode="none" initialRouteName="SplashScreen">
+            <Stack.Navigator headerMode="none">
                 <Stack.Screen name="SplashScreen" component={SplashScreen} />
                 <Stack.Screen name="Home" component={Home} />
             </Stack.Navigator>
